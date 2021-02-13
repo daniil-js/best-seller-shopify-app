@@ -1,0 +1,52 @@
+{
+  "name": "best-seller-shopify-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "format": "prettier --write **/*.{js,ts,tsx}",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon  --exec ts-node -- ./server.ts",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniilpaderin-dev/best-seller-shopify-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniilpaderin-dev/best-seller-shopify-app/issues"
+  },
+  "homepage": "https://github.com/daniilpaderin-dev/best-seller-shopify-app#readme",
+  "dependencies": {
+    "@shopify/koa-shopify-auth": "^3.2.0",
+    "@shopify/koa-shopify-graphql-proxy": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "isomorphic-fetch": "^3.0.0",
+    "koa": "^2.13.1",
+    "koa-session": "^6.1.0",
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  }
+}
